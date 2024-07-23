@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .home-icon {
+            color:#ffffff;
+        }
+
+        #scroll-icon {
+            animation: scrollAnimation 2s infinite;
+        }
+
+        @keyframes scrollAnimation {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body class="">
+    <div class="relative h-screen flex items-center bg-slate-950">
+        <div class="container mx-auto space-y-6">
+            <div class="flex justify-center text-7xl text-white">
+                <p class="font-semibold text-center">I'm <span class="font-bold">Arnie</span></p>
+            </div>
+            <div class="flex justify-center gap-4">
+                <a href="https://github.com/"><i class="home-icon fa-brands fa-github"></i></a>
+                <a href="#"><i class="home-icon fa-brands fa-google-plus-g"></i></a>
+                <a href="#"><i class="home-icon fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="home-icon fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="absolute mb-10 inset-x-0 bottom-0">
+            <a href="#" class="w-full flex justify-center">
+                <i id="scroll-icon" class="home-icon fa-solid fa-circle-down fa-xl"></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
