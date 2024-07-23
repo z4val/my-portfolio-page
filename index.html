@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,11 +26,11 @@
         }
     </style>
 </head>
-<body class="">
-    <div class="relative h-screen flex items-center bg-slate-950">
+<body class="bg-slate-800">
+    <div class="relative h-screen flex items-center bg-gradient-to-b from-slate-950 to-slate-800">
         <div class="container mx-auto space-y-6">
-            <div class="flex justify-center text-7xl text-white">
-                <p class="font-semibold text-center">I'm <span class="font-bold">Arnie</span></p>
+            <div class="animate-text-container flex justify-center text-7xl text-white">
+                <span class="text font-semibold text-center">Soy <span id="animate-text" class="text font-bold"></span></span>
             </div>
             <div class="flex justify-center gap-4">
                 <a href="https://github.com/"><i class="home-icon fa-brands fa-github"></i></a>
@@ -41,10 +41,59 @@
         </div>
 
         <div class="absolute mb-10 inset-x-0 bottom-0">
-            <a href="#" class="w-full flex justify-center">
+            <a href="#next-section" class="w-full flex justify-center">
                 <i id="scroll-icon" class="home-icon fa-solid fa-circle-down fa-xl"></i>
             </a>
         </div>
     </div>
+
+    <div id="next-section" class="container mx-auto space-y-10">
+        <div class="relative text-center uppercase font-bold">
+            <span class="text-7xl text-slate-700 z-0">about me</span>
+            <div class="absolute inset-x-0 top-1 z-1">
+                <h3 class="text-3xl text-yellow-400">About me</h3>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-6">
+            <div class="mx-auto">
+                <img class="rounded-md" src="https://scontent.ftru2-1.fna.fbcdn.net/v/t39.30808-6/296373723_360174819619687_5288676409069644912_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEOqVtp_fa5oSqfIRuEAftgpOb5lmKqplik5vmWYqqmWJ6OJD2ZcLOfrDWNdBiALy4NaTuKlVApohG3-g0ETEOy&_nc_ohc=_gKp0EYtkSUQ7kNvgG4Utad&_nc_ht=scontent.ftru2-1.fna&oh=00_AYCZnnu-_22JGXxKkmAXW-rTASnViWY3ZEMPJKWw-llsqg&oe=66A514C6" alt="Hola mundo">
+            </div>
+            <div class="my-auto space-y-4 text-white">
+                <h4 class="text-4xl font-bold">Hi There! I'm Luis Zavaleta</h4>
+                <span class="font-semibold text-yellow-400">Desarrollador</span>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, porro repellat! Repellat dolorum tempora quia facere, quis, repellendus quae distinctio velit ullam, perferendis ut sequi eveniet. Vitae facere nostrum voluptates?</p>
+                <div class="grid grid-cols-4">
+                    <ul>
+                        <li>Cumpleaños</li>
+                        <li>Teléfono</li>
+                        <li>Correo electrónico</li>
+                        <li>Procedencia</li>
+                        <li>Idiomas</li>
+                    </ul>
+                    <ul class="col-span-3">
+                        <li>: Octubre 23, 2004</li>
+                        <li>: +51 971311802</li>
+                        <li>: danielzavaletamego@gmail.com</li>
+                        <li>: Trujillo, Perú</li>
+                        <li>: Español, Inglés(Básico)</li>
+                    </ul>
+                </div>
+                <button>
+                    Hola mundo
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        let typed = new Typed('#animate-text', {
+            strings : ["Desarrollador", "Estudiante", "Luis"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
+    </script>
 </body>
 </html>
