@@ -1,0 +1,20 @@
+.header {
+    font-family: Montserrat, monospace;
+}
+
+.simple-text {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+#scroll-icon {
+    animation: scrollAnimation 2s infinite;
+}
+
+@keyframes scrollAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
