@@ -1,7 +1,7 @@
 function listBg() {
     const navbarToggler = document.querySelector('.navbar-toggler');
-    navbarToggler.classList.toggle('dark:bg-transparent');
-    navbarToggler.classList.toggle('dark:bg-slate-950');
+    navbarToggler.classList.toggle('bg-transparent');
+    navbarToggler.classList.toggle('bg-slate-950');
 }
 
 document.addEventListener('scroll', function() {
