@@ -1,3 +1,11 @@
+@media (min-width: 1368px) and (min-height: 737px) {
+    #about-section {
+        height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+}
+
 .header {
     font-family: Montserrat, monospace;
 }
